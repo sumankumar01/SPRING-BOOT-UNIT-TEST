@@ -1,13 +1,13 @@
-package com.bezkoder.spring.test;
+package com.spring.test;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringBootRestControllerUnitTestApplication {
+public class SpringBootRestUnitTestApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringBootRestControllerUnitTestApplication.class, args);
+		SpringApplication.run(SpringBootRestUnitTestApplication.class, args);
 	}
 
 }

@@ -1,4 +1,4 @@
-package com.bezkoder.spring.test;
+package com.spring.test;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.doNothing;
@@ -13,6 +13,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 
+import com.spring.test.repository.TutorialRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
@@ -22,9 +23,8 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
 
-import com.bezkoder.spring.test.controller.TutorialController;
-import com.bezkoder.spring.test.model.Tutorial;
-import com.bezkoder.spring.test.repository.TutorialRepository;
+import com.spring.test.controller.TutorialController;
+import com.spring.test.model.Tutorial;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 @WebMvcTest(TutorialController.class)
